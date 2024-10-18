@@ -1,0 +1,232 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background-color: #e0b1cb;
+    color: #231942;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: #5e548e;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: 3px 7px 42px -13px rgba(0,0,0,0.75);
+}
+
+#logo_header p {
+    font-family: "Anton SC", sans-serif;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    padding: 10px 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #e0b1cb;
+}
+
+main {
+    padding: 2rem;
+    background-color: #f7edf0;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #be95c4;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.container_button {
+    margin-right: 10px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+
+.container_button button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.container_button button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+.container_button button:hover {
+    color: #e8e8e8;
+}
+
+.container_button button:hover::before {
+    width: 100%;
+}
+
+
+.editable-text {
+    color: #231942;
+}
+
+.editable-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+#imagenes_texto {
+    display: flex;
+}
+
+#imagenes_texto p {
+    margin: 40px;
+    text-align: center;
+    color: #44424d;
+}
+
+#imagenes_texto img {
+    box-shadow: -4px -2px 26px 0px rgba(0,0,0,0.75);
+}
+
+.blog {
+    background-color: #9f86c0;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.blog .post {
+    margin-bottom: 1rem;
+}
+
+.galeria {
+    display: flex;
+    gap: 120px;
+    margin-left: 50px;
+}
+
+.fotos_imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px); 
+    gap: 10px;
+}
+.fotos_imagenes img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: -4px -2px 26px 0px rgba(0,0,0,0.75);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.fotos_imagenes img:hover {
+    transform: scale(2);
+    z-index: 10;
+    position: relative;
+}
+
+.h2_colores h2 {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(90deg, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbow 10s infinite linear;
+}
+
+.h1_colores h1 {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbow 10s infinite linear;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.colores_mano {
+    display: flex;
+}
+
+.colores_mano img {
+    margin-left: 20px;
+    margin-top: 13px;
+    display:none;
+    padding: 0;
+}
+
+.colores_mano h1:hover + img {
+    display: block;
+}
+
+footer {
+    background-color: #5e548e;
+    color: #e0b1cb;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #231942;
+}

@@ -1,0 +1,118 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background-color: #e0b1cb;
+    color: #231942;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: #5e548e;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#logo_header p {
+    font-family: "Anton SC", sans-serif;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    padding: 10px;
+}
+
+#back_button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#back_button button {
+    background-color: #231942;
+    color: #e0b1cb;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back_button button:hover {
+    background-color: #3d2c66;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-team {
+    text-align: center;
+}
+
+.about-team h1 {
+    font-family: "Ubuntu", sans-serif;
+    color: #5e548e;
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #231942;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #5e548e;
+}
+
+footer {
+    background-color: #5e548e;
+    color: #e0b1cb;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #231942;
+}

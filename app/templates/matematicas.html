@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas</title>
+    <!-- Conectar la hoja de estilos con html -->
+    <link rel="stylesheet" href="../static/css/matematica.css">
+    <!-- Declarar el icono de cabeza de pagina-->
+    <link rel="icon" href="../static/img/logoCabezaDePagina.png">
+</head>
+
+<body>
+    <!-- Etiqueta Style solo para importar las tipografias "esto es un gusto" -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700&display=swap');
+    </style>
+    <header>
+        <div id="logo_header">
+            <div class="logo">
+                <img src="../static/img/logo_mundo.png" width="30px">
+                <p>Matemáticas</p>
+            </div>
+        </div>
+        <div id="back_button">
+            <button onclick="window.history.back();">Volver atrás</button>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <div class="blog">
+            <h2>Información sobre el IMC</h2>
+            <p>El Índice de Masa Corporal (IMC) es una medida que se utiliza para determinar si una persona tiene un
+                peso saludable en relación con su altura. Se calcula dividiendo el peso de la persona (en kilogramos)
+                por el cuadrado de su altura (en metros).</p>
+            <p>El IMC se clasifica en las siguientes categorías:</p>
+            <ul>
+                <li><strong>Bajo peso:</strong> IMC menor de 18.5</li>
+                <li><strong>Peso saludable:</strong> IMC entre 18.5 y 24.9</li>
+                <li><strong>Sobrepeso:</strong> IMC entre 25 y 29.9</li>
+                <li><strong>Obesidad:</strong> IMC de 30 o mayor</li>
+            </ul>
+            <p>El IMC es una herramienta útil, pero tiene limitaciones. No toma en cuenta factores como la masa
+                muscular, la distribución de grasa corporal, y las diferencias individuales en la composición corporal.
+            </p>
+        </div>
+
+        <div class="tarjetas">
+            <h3>Enlaces relacionados</h3>
+            <div class="tarjeta">
+                <h4>Llevar una vida saludable</h4>
+                <p>Información sobre el IMC y la salud.</p>
+                <a
+                    href="https://www.gob.mx/issste/articulos/la-obesidad-se-puede-prevenir#:~:text=Toma%20agua%20simple%2C%20entre%206,para%20ni%C3%B1as%2C%20ni%C3%B1os%20y%20adolescentes.">Visitar
+                    sitio</a>
+            </div>
+            <div class="tarjeta">
+                <h4>Ministerio de Salud</h4>
+                <p>Guías y recomendaciones sobre el peso saludable.</p>
+                <a href="https://www.minsalud.gov.co">Visitar sitio</a>
+            </div>
+            <div class="tarjeta">
+                <h4>Yazio</h4>
+                <p>Utiliza Yazio para administrar y crear una rutina de alimentación sana…</p>
+                <a href="https://www.yazio.com/es">Visitar sitio</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_calculadora">
+        <div class="calculadora">
+            <h2>Calculadora de IMC 📊</h2>
+            <form id="formularioIMC">
+                <label for="altura">Dime tu estatura (Solo valor numérico):</label>
+                <input type="number" id="altura" name="altura" step="0.01" required>
+                <label for="peso">Dime tu peso (Solo valor numérico):</label>
+                <input type="number" id="peso" name="peso" required>
+                <label for="Nombre_persona">Digita tu nombre</label>
+                <input type="text" id="nombre" required>
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+            </form>
+            <div id="resultadoIMC"></div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <a href="we.html">
+            <p>&copy; 2024 Proyecto Nodo Steam</p>
+        </a>
+    </footer>
+    <script src="../static/js/matematicas.js"></script>
+</body>
+
+</html>

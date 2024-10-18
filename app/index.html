@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nodo Estudiantil</title>
+  <!-- Conectar la hoja de estilos con html -->
+  <link rel="stylesheet" href="static/css/style.css" />
+  <!-- Declarar el icono de cabeza de pagina-->
+  <link rel="icon" href="static/img/logoCabezaDePagina.png" />
+</head>
+
+<body>
+  <!-- Etiqueta Style solo para importar las tipografias "esto es un gusto" -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+  </style>
+  <!-- la etiqueta header como su nombre lo dice estara en la cabeza de la pagina, en esta se ve el nombre del proyecto y el logo, tambien apreciamos las 4 materias que conforma el nodo -->
+  <header>
+    <div id="logo_header">
+      <div class="logo">
+        <img src="static/img/logo_mundo.png" width="30px" />
+        <p>Nodo Steam</p>
+      </div>
+    </div>
+    <nav>
+      <!-- Lista ordenada la cual tiene como redireciones la ID de cada una de las materias y sus apartados en la pagina principal -->
+      <ul>
+        <li><a href="#matematicas" id="matematicass">Matemáticas</a></li>
+        <li><a href="#quimica" id="quimicaa">Química</a></li>
+        <li><a href="#fisica" id="fisicaa">Física</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- En esta parte onservamos una especie de blog o galeria de fotos, en donde se puede ver la evidencias fotograficas de lo que se ha hecho durante este proceso -->
+  <aside class="blog">
+    <div class="h2_colores">
+      <h2>Photo Gallery</h2>
+    </div>
+    <div class="post">
+      <div class="Texto_precentacion">
+        <h3>
+          En esta parte de la presentación, se mostrarán fotos que resumen
+          todo el proceso de investigación.
+        </h3>
+      </div>
+      <div class="galeria">
+        <div class="fotos_imagenes">
+          <img src="static/img/image/carpeta-alejandra.jpg" />
+          <img src="static/img/image/carpeta-cespedes.jpg" />
+          <img src="static/img/image/carpeta-jesus.jpg" />
+          <img src="static/img/image/carpetaGrupo.jpg" />
+          <div class="fotos_textos">
+            <p>
+              Evidencias de matemáticas.
+              <a href="templates/matematicas.html"><strong>¿Más?...</strong></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="fotos_imagenes">
+          <img src="static/img/N-A.png" title="Sin info" />
+          <img src="static/img/N-A.png" title="Sin info" />
+          <img src="static/img/N-A.png" title="Sin info" />
+          <img src="static/img/N-A.png" title="Sin info" />
+          <div class="fotos_textos">
+            <p>
+              Evidencias de Química.
+              <a href="templates/quimica.html"><strong>¿Más?...</strong></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="fotos_imagenes">
+          <img src="static/img/N-A.png" title="Sin info" />
+          <img src="static/img/N-A.png" title="Sin info" />
+          <img src="static/img/N-A.png" title="Sin info" />
+          <img src="static/img/N-A.png" title="Sin info" />
+          <div class="fotos_textos">
+            <p>
+              Evidencias de Física.
+              <a href="templates/fisica.html"><strong>¿Más?...</strong></a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+  <!-- apartado en el cuerpo de pagin en donde se divide por secciones cada una de las informaciones de las diferentes materias  -->
+  <main>
+    <section id="matematicas">
+      <div class="h1_colores">
+        <div class="colores_mano">
+          <h1><a href="templates/matematicas.html">Matemáticas</a></h1>
+          <img src="static/img/logoMano.png" width="100" />
+        </div>
+      </div>
+      <p>
+        <span class="editable-text"><strong>Resumen De Matemáticas:</strong></span>
+      </p>
+      <div id="imagenes_texto">
+        <img src="static/img/logoImc-matematicas.jpg" width="200" alt="Matemáticas" class="editable-img" />
+        <p>
+          El Índice de Masa Corporal (IMC) es una medida utilizada para
+          evaluar si una persona tiene un peso adecuado en relación con su
+          altura. Se calcula dividiendo el peso en kilogramos por el cuadrado
+          de la altura en metros (kg/m²). Este índice es una herramienta
+          sencilla y rápida que permite clasificar a los individuos en
+          categorías como bajo peso, peso saludable, sobrepeso y obesidad....
+          <strong>click on the name "Matemáticas" to access all the
+            information.</strong>
+        </p>
+        <!-- en esta oarte podemos apreciar dos botones que van a reproducir un audio en ingles o español del texto que se muestra en pantalla -->
+        <div class="botones">
+          <div class="container_button">
+            <audio id="Matematicas_español" src="static/audio/Español-matematicas.mp3" preload="auto"></audio>
+            <button id="Español" onclick="playMatematicas()">Español</button>
+          </div>
+          <div class="container_button">
+            <audio id="Matematicas_ingles" src="static/audio/Ingles-matematicas.mp3" preload="auto"></audio>
+            <button id="Ingles" onclick="matematicasPlay()">Inglés</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quimica">
+      <div class="h1_colores">
+        <div class="colores_mano">
+          <h1><a href="templates/quimica.html">Química</a></h1>
+          <img src="static/img/logoMano.png" width="100" />
+        </div>
+      </div>
+      <p>
+        <span class="editable-text"><strong>Resumen De Química:</strong></span>
+      </p>
+      <div id="imagenes_texto">
+        <img src="static/img/logoODS-quimica.jpg" width="200" alt="Química" class="editable-img" />
+        <p>
+          Los Objetivos de Desarrollo Sostenible (ODS), adoptados por todos
+          los Estados Miembros de las Naciones Unidas en 2015, representan un
+          llamamiento universal a la acción para poner fin a la pobreza,
+          proteger el planeta y garantizar que todas las personas disfruten de
+          paz y prosperidad para 2030. Estos 17 objetivos, que abarcan desde
+          la eliminación de la pobreza hasta la lucha contra el cambio
+          climático, la educación, la igualdad de género, la protección de los
+          océanos y los bosques, están interrelacionados y son esenciales para
+          el desarrollo sostenible. La importancia de los ODS radica en varios
+          aspectos cruciales para el futuro de la humanidad y del planeta....
+          <strong>click on the name "Química" to access all the
+            information.</strong>
+        </p>
+        <div class="botones">
+          <div class="container_button">
+            <audio id="Quimica_español" src="static/audio/español-quimica.mp3" preload="auto"></audio>
+            <button id="Español" onclick="playQuimica()">Español</button>
+          </div>
+          <div class="container_button">
+            <audio id="Quimica_ingles" src="static/audio/ingles-quimica.mp3" preload="auto"></audio>
+            <button id="Ingles" onclick="quimicaPlay()">Inglés</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fisica">
+      <div class="h1_colores">
+        <div class="colores_mano">
+          <h1><a href="templates/fisica.html">Física.M</a></h1>
+          <img src="static/img/logoMano.png" width="100" />
+        </div>
+      </div>
+      <p>
+        <span class="editable-text"><strong>Resumen De Física</strong></span>
+      </p>
+      <div id="imagenes_texto">
+        <img src="static/img/fisica.jpg" width="200" alt="Física" class="editable-img" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          quaerat accusamus quae excepturi porro necessitatibus, libero
+          consequuntur suscipit modi sapiente molestias optio ipsa rem
+          voluptates reprehenderit perspiciatis earum repellendus illo!<strong>click on the name "Física.M" to access
+            all the
+            information.</strong>
+        </p>
+        <div class="botones">
+          <div class="container_button">
+            <audio id="audio_español" src="templates/audio/Español-matematicas.mp3" preload="auto"></audio>
+            <button id="Español" onclick="playAudio()">Español</button>
+          </div>
+          <div class="container_button">
+            <audio id="audio_ingles" src="templates/audio/Ingles-matematicas.mp3" preload="auto"></audio>
+            <button id="Ingles" onclick="audioPlay()">Inglés</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="templates/we.html">
+      <p>&copy; 2024 Proyecto Nodo Steam</p>
+    </a>
+  </footer>
+
+  <script src="static/js/Script.js  "></script>
+</body>
+
+</html>
